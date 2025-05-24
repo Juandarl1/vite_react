@@ -1,0 +1,264 @@
+body {
+  font-family: Comic Relief, system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #6e6294, #655a88, #5c527d, #534a71, #4a4266, #57486b, #624e6f, #6e5473, #926a86, #b58298, #d79ca9, #f8b8b9);
+  min-height: 100vh;
+}
+
+
+
+/* Description */
+.section_Description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:#F8B8B9;
+  font-family: 'Comic Relief', system-ui, sans-serif;
+  font-size: 1.2em;
+  margin: 40px;
+  line-height: 1.5em; 
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+/* About */
+/* Contenedor principal */
+.section_About {
+  display: flex;
+  color: #fdfdfd;
+  font-family: 'Comic Relief', system-ui, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-weight: bold;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+
+  /* Definir el ancho explícitamente para que ocupe todo el espacio disponible */
+  /* 100% menos los márgenes */
+}
+
+/* Lado izquierdo */
+.left_side {
+  background-color: #3f3857; /* Color oscuro */
+  padding: 40px;
+  width: 30%;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Sección de servicios que contiene el lado derecho */
+.section_Services {
+  width: 70%;
+  /* Asegurar que ocupa todo el espacio disponible */
+  flex-grow: 1;
+}
+
+/* Lado derecho */
+.right_side {
+  background-color: #5d4d7a; /* Color más claro */
+  padding: 30px;
+  /* Asegurar que el contenedor ocupa todo el espacio */
+  box-sizing: border-box;
+  height: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para el título de servicios */
+.section_Services h1 {
+  font-size: 2em;
+  color: #ffa69e; /* Color salmón para el título */
+  margin-bottom: 20px;
+}
+
+/* Estilo para la lista */
+.section_Services ul {
+  justify-content: center;
+  align-items: center;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.section_Services li {
+  margin-bottom: 10px;
+}
+
+/* Estilo para el logo */
+.section_Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.section_Logo img {
+  width: 180px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.services_Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.services_Logo img {
+  width: 280px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  
+}
+
+.bath_Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.bath_Logo img {
+  width: 280px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  
+}
+
+
+
+
+
+/* Contact */
+.section_About {
+  flex: 1 1 65%; /* Toma aproximadamente 65% del espacio */
+  margin: 0; /* Elimina los márgenes anteriores porque ahora están en main_container */
+}
+
+/* image */
+.section_Logo {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  border: 2px solid #F8B8B9;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section_Logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+} 
+
+
+/* HEADER */
+.header-container {
+  background: linear-gradient(135deg, #5d4d7a, #3f3857);
+  padding: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.logo-text {
+  flex-grow: 1;
+}
+
+.company-name {
+  font-family: 'Comic Relief', system-ui, sans-serif;
+  font-size: 2.5em;
+  margin: 0;
+  color: #F8B8B9;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.address {
+  margin: 10px 0 0 0;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #ffa69e;
+}
+
+.address-line {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.logo-icon {
+  margin-right: 20px;
+  color: #F8B8B9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #3f3857;
+  border-radius: 50%;
+  border: 2px solid #F8B8B9;
+}
+
+.slogan {
+  font-style: italic;
+  font-size: 1em;
+  margin-top: 15px;
+  color: #fdfdfd;
+  font-weight: bold;
+}
+
+/* Línea decorativa */
+.decorative-line {
+  width: 150px;
+  height: 3px;
+  background-color: #F8B8B9;
+  margin: 15px 0;
+}
+
+/* Icono de tintorería */
+.hanger-icon {
+  width: 50px;
+  height: 50px;
+  fill: #F8B8B9;
+}
+
+/* Responsive para dispositivos pequeños */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .logo-icon {
+    margin: 0 0 20px 0;
+  }
+  
+  .decorative-line {
+    margin: 15px auto;
+  }
+}
